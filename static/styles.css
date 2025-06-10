@@ -467,6 +467,120 @@ body {
   filter: blur(8px) brightness(0.6);
   z-index: 0;
 }
+.section.light .container > p {
+  position: relative;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  z-index: 2;
+  text-shadow: 0 2px 12px #000a, 0 1px 0 #222;
+}
+
+/* Portfolio Section Styles */
+/* filepath: c:\Users\terat\Documents\Semetre IV\Interaccion Humano Computador\UX\static\styles.css */
+/* ...existing code... */
+
+.portfolio-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(34, 54, 94, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 24px 18px 18px 18px;
+  transition: transform 0.3s cubic-bezier(.77,0,.18,1), box-shadow 0.3s;
+  cursor: pointer;
+  min-width: 220px;
+  max-width: 320px;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 16px 48px #00ff6a55, 0 2px 8px #0008;
+}
+
+.portfolio-item img {
+ width: 340px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px #0006;
+  transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 32px #00ff6a77, 0 2px 8px #0008;
+}
+
+.portfolio-title {
+  margin-top: 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00ff6a;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #0008;
+  transition: color 0.3s;
+}
+
+.portfolio-item:hover .portfolio-title {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .portfolio-items {
+    gap: 24px;
+  }
+  .portfolio-item img {
+    width: 160px;
+    height: 100px;
+  }
+  .portfolio-item {
+    min-width: 140px;
+    max-width: 220px;
+    padding: 14px 8px 12px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 18px;
+  }
+  .portfolio-item {
+    width: 90vw;
+    max-width: 98vw;
+    min-width: 0;
+    padding: 10px 2vw 10px 2vw;
+  }
+  .portfolio-item img {
+    width: 100%;
+    height: 32vw;
+    min-height: 80px;
+    max-height: 160px;
+  }
+  .portfolio-title {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
 /*********************** E X P E R I E N C I A ******************************/
 .section.ex {
   position: relative;

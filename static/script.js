@@ -21,3 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('¡Mensaje enviado correctamente!');
+  this.reset();
+});
